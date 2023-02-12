@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/Game.js" type="module"></script>
+
+  <title>Connect Four</title>
+</head>
+
+<body>
+  <div class="main-menu | full-vp">
+    <div class="main-menu__wrapper">
+      <div class="main-menu__screen">
+        <div class="start-menu | menu-box | box box--big box--purple">
+          <button class="btn-pvc | box-btn box-btn--red">Play vs CPU</button>
+          <button class="btn-pvp | box-btn box-btn--yellow">Play vs player</button>
+          <button class="btn-rules | box-btn box-btn--white">Game rules</button>
+        </div>
+      </div>
+      <div class="main-menu__screen">
+        <div class="rules | menu-box | box box--big box--white">
+          <p class="box-title">Rules</p>
+          <p class="box-subtitle">Objective</p>
+          <p class="box-text">Be the first player to connect 4 of the same colored discs in a row (either
+            vertically, horizontally, or diagonally).</p>
+          <p class="box-subtitle">How to play</p>
+          <ul class="box-list">
+            <li class="box-item">Red goes first in the first game.</li>
+            <li class="box-item">Players must alternate turns, and only one disc can be dropped in each turn.</li>
+            <li class="box-item">The game ends when there is a 4-in-a-row or a stalemate.</li>
+            <li class="box-item">The starter of the previous game goes second on the next game.</li>
+          </ul>
+          <button class="btn-ok-rules"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="game | full-vp">
+    <div class="game__wrapper | full-vp">
+      <header class="game__header">
+        <button class="btn-menu | game-btn">Menu</button>
+        <button class="btn-restart | game-btn">Restart</button>
+      </header>
+      <div class="scores">
+        <div class="score1 score | box box--white"></div>
+        <div class="score2 score | box box--white"></div>
+      </div>
+      <div class="grid">
+        <div class="grid__wrapper"></div>
+      </div>
+      <div class="status">
+        <div class="info | box box--white">
+          <button class="btn-play | game-btn">Play</button>
+        </div>
+        <div class="timer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ingame-menu | full-vp">
+    <div class="ingame-menu__wrapper | full-vp">
+      <div class="menu-box | box box--big box--purple">
+        <p class="box-title">Pause</p>
+        <button class="btn-continue | box-btn box-btn--white">Continue game</button>
+        <button class="btn-restart-menu | box-btn box-btn--white">Restart</button>
+        <button class="btn-quit | box-btn box-btn--red">Quit game</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="transition-screen | full-vp"></div>
+</body>
+
+</html>
