@@ -1,3 +1,8 @@
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
 const ROWS = 6;
 const COLS = 7;
 const EMPTY = " ";
@@ -132,17 +137,28 @@ function makeCPUMove() {
   placePiece(row - 1, col, CPU_PIECE);
 }
 
+// Get the player's move from the console
+function getPlayerMove(player) {
+  return new Promise((resolve) => {
+    readline.question(`${player}, enter column number between (1, 7): `, (col) => {
+      readline.close();
+      resolve(parseInt(col) - 1);
+    });
+  });
+}
+
 // Start the game
-function startGame() {
+async function startGame() {
   initBoard();
   printBoard();
 
+
   while (true) {
     if (currentPlayer === PLAYER_PIECE) {
-      // Player turn
-      let col = prompt(" Enter a column number (1-7) to place your piece: ");
 
-      col--; // Adjust column index
+      // Player turn
+      let col = await getPlayerMove("You");
+
       if (isValidMove(col)) {
         let row = 0;
         while (row < ROWS && board[row][col] === EMPTY) {
