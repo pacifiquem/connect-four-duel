@@ -172,4 +172,4 @@ function startGame() {
 }
 
 // start the game
-module.exports.playerVsCpu = startGame;
+startGame();

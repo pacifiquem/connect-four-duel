@@ -132,5 +132,4 @@ async function playGame() {
   }
 }
 
-// start the game
-module.exports.playerVsPlayer = playGame;
+playGame();
