@@ -1,3 +1,3 @@
-*.css linguistic_languages: sass,
-*.html linguistic_languages: astro,
-*.js linguistic_languages: TypeScript,
+*.css linguistic_languages=SCSS,
+*.html linguistic_languages=Astro,
+*.js linguistic_languages=TypeScript,
