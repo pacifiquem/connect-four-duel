@@ -1,8 +1,3 @@
-const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
 const ROWS = 6;
 const COLS = 7;
 const EMPTY = " ";
@@ -140,6 +135,11 @@ function makeCPUMove() {
 // Get the player's move from the console
 function getPlayerMove(player) {
   return new Promise((resolve) => {
+    const readline = require("readline").createInterface({
+      input: process.stdin,
+      output: process.stdout,
+    });
+
     readline.question(`${player}, enter column number between (1, 7): `, (col) => {
       readline.close();
       resolve(parseInt(col) - 1);
