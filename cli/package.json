@@ -1,0 +1,29 @@
+{
+  "name": "connect-4-game",
+  "version": "1.0.0",
+  "description": "connect-4-game in terminal",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacifiquem/connect-4-game.git"
+  },
+  "keywords": [
+    "connect",
+    "4",
+    "game",
+    "connect-4-game",
+    "cli",
+    "npx-proj",
+    "pacifiquem"
+  ],
+  "author": "pacifiquem@github.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacifiquem/connect-4-game/issues"
+  },
+  "homepage": "https://github.com/pacifiquem/connect-4-game#readme"
+}

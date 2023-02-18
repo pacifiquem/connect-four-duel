@@ -132,4 +132,4 @@ async function playGame() {
   }
 }
 
-playGame();
+module.exports = playGame;

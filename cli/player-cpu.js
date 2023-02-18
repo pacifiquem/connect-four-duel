@@ -187,5 +187,4 @@ async function startGame() {
   }
 }
 
-// start the game
-startGame();
+module.exports = startGame;
