@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "connect-4-game in terminal",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "connect-4-game": "/bin/npx-proj.ts"
+  },
   "scripts": {
     "test": "node index.js"
   },
