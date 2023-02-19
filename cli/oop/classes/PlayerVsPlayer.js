@@ -44,5 +44,4 @@ class PlayerVsPlayer extends Game {
   }
 }
 
-let playGround = new PlayerVsPlayer();
-playGround.playGame();
+module.exports = PlayerVsPlayer;

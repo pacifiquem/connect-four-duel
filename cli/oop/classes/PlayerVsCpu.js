@@ -60,5 +60,4 @@ class PlayerVsCpu extends Game {
 
 }
 
-const playGround = new PlayerVsCpu();
-playGround.playGame();
+module.exports = PlayerVsCpu;
