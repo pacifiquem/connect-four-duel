@@ -1,10 +1,10 @@
 {
   "name": "connect-four-duel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "play connect-4-game in terminal",
   "main": "index.js",
   "bin": {
-    "connect-four-duel": "index.js"
+    "connect-four-duel": "./index.js"
   },
   "scripts": {
     "test": "node index.js"
