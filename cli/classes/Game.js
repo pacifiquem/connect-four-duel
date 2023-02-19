@@ -7,7 +7,6 @@ class Game {
     this.CPU_PIECE = "O";
     this.WINNING_LENGTH = 4;
     this.board = [];
-    this.board = [];
     this.currentPlayer = this.PLAYER_PIECE;
   }
 
