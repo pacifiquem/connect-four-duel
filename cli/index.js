@@ -1,4 +1,5 @@
-#!/usr/bin/env
+#!/usr/bin/env node
+
 const PlayerVsPlayer = require("./classes/PlayerVsPlayer.js");
 const PlayerVsCpu = require("./classes/PlayerVsCpu.js");
 
