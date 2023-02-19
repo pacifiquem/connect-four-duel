@@ -38,10 +38,13 @@ class Game {
         output: process.stdout,
       });
 
-      readline.question(`${player}, enter column number between (1, 7): `, (col) => {
-        readline.close();
-        resolve(parseInt(col) - 1);
-      });
+      readline.question(
+        `${player}, enter column number between (1, 7): `,
+        (col) => {
+          readline.close();
+          resolve(parseInt(col) - 1);
+        }
+      );
     });
   }
 

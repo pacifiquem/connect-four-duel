@@ -20,7 +20,7 @@
     "npx-proj",
     "pacifiquem"
   ],
-  "author": "pacifiquem@github.com",
+  "author": "pacifiquem@github.com && get to me in terminal hit: npx pacifiquem",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pacifiquem/connect-4-game/issues"

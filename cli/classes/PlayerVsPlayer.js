@@ -10,7 +10,6 @@ class PlayerVsPlayer extends Game {
     let currentPlayer = "X";
 
     while (true) {
-
       console.log("\n\n");
       this.initBoard();
       this.printBoard();
@@ -30,11 +29,11 @@ class PlayerVsPlayer extends Game {
       } else {
         this.board[row][col] = currentPlayer;
         if (this.checkWin(currentPlayer)) {
-            this.printBoard();
+          this.printBoard();
           console.log(`${currentPlayer} wins!`);
           return;
         } else if (this.board.every((row) => row.every((col) => col !== "."))) {
-            this.printBoard();
+          this.printBoard();
           console.log("Game over, tie!");
           return;
         }

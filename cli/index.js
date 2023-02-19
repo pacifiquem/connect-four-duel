@@ -1,6 +1,6 @@
 #!/usr/bin/env
-const playerVsCpu = require("./player-cpu");
-const playerVsPlayer = require("./player-player");
+const PlayerVsPlayer = require("./classes/PlayerVsPlayer.js");
+const PlayerVsCpu = require("./classes/PlayerVsCpu.js");
 
 function getInput() {
   return new Promise((resolve) => {
@@ -19,18 +19,20 @@ function getInput() {
 async function play() {
   console.log("\n\n== Choose a game mode or display Help ==\n");
   console.log("1. Player vs CPU");
-  console.log("2. Player vs Player");
+  console.log("2. Player vs Player\n");
 
   let gameMode = await getInput();
-
+  let playGround;
   switch (gameMode) {
     case 1:
       console.log("\n\n === Player(X) vs CPU(0) ===\n\n");
-      playerVsCpu();
+      playGround = new PlayerVsCpu();
+      playGround.playGame();
       break;
     case 2:
       console.log("\n\n === Player(X) vs Player(0) ===\n\n");
-      playerVsPlayer();
+      playGround = new PlayerVsPlayer();
+      playGround.playGame();
       break;
     default:
       console.log("Invalid option, please try again.");

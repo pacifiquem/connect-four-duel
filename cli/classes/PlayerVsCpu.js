@@ -6,7 +6,6 @@ class PlayerVsCpu extends Game {
   }
 
   async playGame() {
-
     this.initBoard();
     this.printBoard();
 
@@ -57,7 +56,6 @@ class PlayerVsCpu extends Game {
   placePiece(row, col, piece) {
     this.board[row][col] = piece;
   }
-
 }
 
 module.exports = PlayerVsCpu;
