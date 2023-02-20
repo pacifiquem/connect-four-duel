@@ -6,9 +6,11 @@ class PlayerVsCpu extends Game {
   }
 
   async playGame() {
+
+    this.initBoard();
+    this.printBoard();
+
     while (true) {
-      this.initBoard();
-      this.printBoard();
 
       if (this.currentPlayer === this.PLAYER_PIECE) {
         // Player turn
