@@ -1,6 +1,6 @@
 {
   "name": "connect-four-duel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "play connect-4-game in terminal",
   "main": "index.js",
   "bin": {
