@@ -8,4 +8,9 @@
 - You can play it on [web](https://at-connect-4-game.vercel.app)
 - Or use your teminal ``npx connect-four-duel``
 
-### Remember to Star the repo if you enjoyed this .
+## Preview
+| Web | Terminal |
+|---------------------|---------------------|
+| <img src="./web-preview.png" alt="Web Preview" /> | <img src="./terminal-preview.png" alt="Terminal Preview" /> |
+
+## Remember to Star the repo if you enjoyed this .
