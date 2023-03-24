@@ -1,4 +1,4 @@
-# connect-4-game
+# connect-four-duel
 
 ![npm](https://img.shields.io/npm/v/connect-four-duel.svg?style=flat-square)
 ![NPM Downloads](https://img.shields.io/npm/dw/connect-four-duel?style=flat-square)
